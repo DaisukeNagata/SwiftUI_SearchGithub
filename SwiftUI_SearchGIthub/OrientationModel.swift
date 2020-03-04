@@ -63,6 +63,7 @@ final class OrientationModel: ObservableObject {
                 fatalError(error.localizedDescription)
             }
         }, receiveValue: { user in
+            // this is sorted
             self.users =  user.sorted { (l, r) -> Bool in
                 if l.id < r.id {
                     return false
