@@ -21,7 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		BB639A1F240FE7EE00F56B29 /* SwiftUI_SearchGIthub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUI_SearchGIthub.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB639A1F240FE7EE00F56B29 /* SwiftUI_SearchGithub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUI_SearchGithub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB639A22240FE7EE00F56B29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BB639A24240FE7EE00F56B29 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		BB639A26240FE7EE00F56B29 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -50,7 +50,7 @@
 		BB639A16240FE7EE00F56B29 = {
 			isa = PBXGroup;
 			children = (
-				BB639A21240FE7EE00F56B29 /* SwiftUI_SearchGIthub */,
+				BB639A21240FE7EE00F56B29 /* SwiftUI_SearchGithub */,
 				BB639A20240FE7EE00F56B29 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -58,12 +58,12 @@
 		BB639A20240FE7EE00F56B29 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BB639A1F240FE7EE00F56B29 /* SwiftUI_SearchGIthub.app */,
+				BB639A1F240FE7EE00F56B29 /* SwiftUI_SearchGithub.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BB639A21240FE7EE00F56B29 /* SwiftUI_SearchGIthub */ = {
+		BB639A21240FE7EE00F56B29 /* SwiftUI_SearchGithub */ = {
 			isa = PBXGroup;
 			children = (
 				BB639A22240FE7EE00F56B29 /* AppDelegate.swift */,
@@ -79,7 +79,7 @@
 				BB639A30240FE7F100F56B29 /* Info.plist */,
 				BB639A2A240FE7F100F56B29 /* Preview Content */,
 			);
-			path = SwiftUI_SearchGIthub;
+			path = SwiftUI_SearchGithub;
 			sourceTree = "<group>";
 		};
 		BB639A2A240FE7F100F56B29 /* Preview Content */ = {
@@ -93,9 +93,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BB639A1E240FE7EE00F56B29 /* SwiftUI_SearchGIthub */ = {
+		BB639A1E240FE7EE00F56B29 /* SwiftUI_SearchGithub */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BB639A33240FE7F100F56B29 /* Build configuration list for PBXNativeTarget "SwiftUI_SearchGIthub" */;
+			buildConfigurationList = BB639A33240FE7F100F56B29 /* Build configuration list for PBXNativeTarget "SwiftUI_SearchGithub" */;
 			buildPhases = (
 				BB639A1B240FE7EE00F56B29 /* Sources */,
 				BB639A1C240FE7EE00F56B29 /* Frameworks */,
@@ -105,9 +105,9 @@
 			);
 			dependencies = (
 			);
-			name = SwiftUI_SearchGIthub;
+			name = SwiftUI_SearchGithub;
 			productName = SwiftUI_SearchGIthub;
-			productReference = BB639A1F240FE7EE00F56B29 /* SwiftUI_SearchGIthub.app */;
+			productReference = BB639A1F240FE7EE00F56B29 /* SwiftUI_SearchGithub.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -125,7 +125,7 @@
 					};
 				};
 			};
-			buildConfigurationList = BB639A1A240FE7EE00F56B29 /* Build configuration list for PBXProject "SwiftUI_SearchGIthub" */;
+			buildConfigurationList = BB639A1A240FE7EE00F56B29 /* Build configuration list for PBXProject "SwiftUI_SearchGithub" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -138,7 +138,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BB639A1E240FE7EE00F56B29 /* SwiftUI_SearchGIthub */,
+				BB639A1E240FE7EE00F56B29 /* SwiftUI_SearchGithub */,
 			);
 		};
 /* End PBXProject section */
@@ -343,7 +343,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BB639A1A240FE7EE00F56B29 /* Build configuration list for PBXProject "SwiftUI_SearchGIthub" */ = {
+		BB639A1A240FE7EE00F56B29 /* Build configuration list for PBXProject "SwiftUI_SearchGithub" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BB639A31240FE7F100F56B29 /* Debug */,
@@ -352,7 +352,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BB639A33240FE7F100F56B29 /* Build configuration list for PBXNativeTarget "SwiftUI_SearchGIthub" */ = {
+		BB639A33240FE7F100F56B29 /* Build configuration list for PBXNativeTarget "SwiftUI_SearchGithub" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BB639A34240FE7F100F56B29 /* Debug */,
