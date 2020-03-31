@@ -16,16 +16,11 @@ class observable: ObservableObject {
 final class OrientationModel: ObservableObject {
 
     @Published var urlPathSet = "https://api.github.com/search/users"
-    @Published var didChange = PassthroughSubject<Data, Never>()
     @Published var users = [Restaurant]()
     @Published var invalid = false
     @Published var urlPath = ""
     @Published var name = ""
-    @Published var data = Data() {
-        didSet {
-            didChange.send(data)
-        }
-    }
+
     
     private var cancellable: Cancellable? {
         didSet { oldValue?.cancel() }
