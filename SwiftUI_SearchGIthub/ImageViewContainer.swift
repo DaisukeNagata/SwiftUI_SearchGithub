@@ -28,12 +28,7 @@ struct ImageViewContainer: View {
 }
 
 class RemoteImageURL: ObservableObject {
-    var didChange = PassthroughSubject<Data, Never>()
-    @Published var data = Data() {
-        didSet {
-            didChange.send(data)
-        }
-    }
+    @Published var data = Data()
 
     init(imageURL: String) {
         guard let url = URL(string: imageURL) else { return }
