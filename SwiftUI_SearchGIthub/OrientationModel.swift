@@ -9,10 +9,6 @@
 import SwiftUI
 import Combine
 
-class observable: ObservableObject {
-    @Published var observation: NSKeyValueObservation?
-}
-
 final class OrientationModel: ObservableObject {
     
     @Published var spinner = Spinner(isAnimating: true, style: .large) 

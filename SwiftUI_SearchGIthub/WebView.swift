@@ -10,26 +10,22 @@ import SwiftUI
 import WebKit
 
 struct ContentWebView: View {
-    var urlPath: String
+
+    @ObservedObject var viewModel: OrientationModel
+    
     var body: some View {
-        WebView(loadUrl: urlPath).edgesIgnoringSafeArea(.bottom)
+        WebView(loadUrl: self.viewModel.urlPath).edgesIgnoringSafeArea(.bottom)
     }
 }
 
 struct WebView: UIViewRepresentable {
     var loadUrl:String
-    @ObservedObject var observe = observable()
 
     func makeUIView(context: Context) -> WKWebView {
         return WKWebView()
     }
 
     func updateUIView(_ uiView: WKWebView, context: Context) {
-        observe.observation = uiView.observe(\WKWebView.url, options: .new) { view, change in
-            if let url = uiView.url {
-                print("Page loaded: \(url)")
-            }
-        }
         uiView.load(URLRequest(url: URL(string: loadUrl)!))
     }
 }

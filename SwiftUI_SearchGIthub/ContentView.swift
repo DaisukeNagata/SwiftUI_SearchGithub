@@ -53,7 +53,7 @@ struct ContentView: View {
                 .navigationBarTitle(Text("Users"))
     
                 if self.viewModel.invalid == true {
-                    ContentWebView(urlPath: self.viewModel.urlPath)
+                    ContentWebView(viewModel: self.viewModel)
                 }
                 self.viewModel.isAnimating()
             }
