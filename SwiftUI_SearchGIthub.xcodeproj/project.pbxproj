@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB2AF80F243BFAB900482FA2 /* Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2AF80E243BFAB900482FA2 /* Spinner.swift */; };
 		BB639A23240FE7EE00F56B29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB639A22240FE7EE00F56B29 /* AppDelegate.swift */; };
 		BB639A25240FE7EE00F56B29 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB639A24240FE7EE00F56B29 /* SceneDelegate.swift */; };
 		BB639A27240FE7EE00F56B29 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB639A26240FE7EE00F56B29 /* ContentView.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BB2AF80E243BFAB900482FA2 /* Spinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spinner.swift; sourceTree = "<group>"; };
 		BB639A1F240FE7EE00F56B29 /* SwiftUI_SearchGithub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUI_SearchGithub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB639A22240FE7EE00F56B29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BB639A24240FE7EE00F56B29 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 				BB639A3C240FE84E00F56B29 /* OrientationModel.swift */,
 				BB639A3E240FE85600F56B29 /* WebView.swift */,
 				BB639A36240FE83400F56B29 /* ImageViewContainer.swift */,
+				BB2AF80E243BFAB900482FA2 /* Spinner.swift */,
 				BB639A26240FE7EE00F56B29 /* ContentView.swift */,
 				BB639A28240FE7F100F56B29 /* Assets.xcassets */,
 				BB639A2D240FE7F100F56B29 /* LaunchScreen.storyboard */,
@@ -125,7 +128,7 @@
 					};
 				};
 			};
-			buildConfigurationList = BB639A1A240FE7EE00F56B29 /* Build configuration list for PBXProject "SwiftUI_SearchGithub" */;
+			buildConfigurationList = BB639A1A240FE7EE00F56B29 /* Build configuration list for PBXProject "SwiftUI_SearchGIthub" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -162,6 +165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB639A39240FE83C00F56B29 /* Restaurant.swift in Sources */,
+				BB2AF80F243BFAB900482FA2 /* Spinner.swift in Sources */,
 				BB639A3F240FE85600F56B29 /* WebView.swift in Sources */,
 				BB639A3B240FE84500F56B29 /* RestaurantRow.swift in Sources */,
 				BB639A37240FE83400F56B29 /* ImageViewContainer.swift in Sources */,
@@ -345,7 +349,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BB639A1A240FE7EE00F56B29 /* Build configuration list for PBXProject "SwiftUI_SearchGithub" */ = {
+		BB639A1A240FE7EE00F56B29 /* Build configuration list for PBXProject "SwiftUI_SearchGIthub" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BB639A31240FE7F100F56B29 /* Debug */,

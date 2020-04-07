@@ -14,6 +14,8 @@ class observable: ObservableObject {
 }
 
 final class OrientationModel: ObservableObject {
+    
+    @Published var spinner = Spinner(isAnimating: true, style: .large) 
 
     @Published var urlPathSet = "https://api.github.com/search/users"
     @Published var users = [Restaurant]()
@@ -28,6 +30,15 @@ final class OrientationModel: ObservableObject {
     
     deinit {
         cancellable?.cancel()
+    }
+    
+    func isAnimating() -> some View {
+        if self.spinner.isAnimating {
+            return  self.spinner
+        } else {
+            _ = self.spinner.hidden()
+            return  self.spinner
+        }
     }
         
     func search() {
@@ -58,6 +69,7 @@ final class OrientationModel: ObservableObject {
                 fatalError(error.localizedDescription)
             }
         }, receiveValue: { user in
+            self.spinner.isAnimating = false
             // this is sorted
             self.users =  user.sorted { (l, r) -> Bool in
                 if l.id < r.id {
@@ -66,7 +78,6 @@ final class OrientationModel: ObservableObject {
                     return true
                 }
             }
-            print(self.users)
         })
     }
 }
