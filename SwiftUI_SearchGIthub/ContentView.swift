@@ -13,10 +13,6 @@ struct ContentView: View {
 
     @State var name = ""
     @ObservedObject var viewModel = OrientationModel()
-    
-    init() {
-        self.viewModel.spinner.isAnimating = false
-    }
 
     var body: some View {
         NavigationView {
@@ -31,7 +27,6 @@ struct ContentView: View {
                                 } else {
                                     self.viewModel.name = self.name
                                     self.viewModel.search()
-                                    self.viewModel.spinner.isAnimating = true
                                 }},
                               onCommit: validate)
 

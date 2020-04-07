@@ -22,6 +22,10 @@ final class OrientationModel: ObservableObject {
     @Published var invalid = false
     @Published var urlPath = ""
     @Published var name = ""
+    
+    init() {
+        self.spinner.isAnimating = false
+    }
 
     
     private var cancellable: Cancellable? {
@@ -42,10 +46,13 @@ final class OrientationModel: ObservableObject {
     }
         
     func search() {
+
         guard !name.isEmpty else {
             return users = []
         }
         
+        self.spinner.isAnimating = true
+
         var urlComponents = URLComponents(string: urlPathSet)!
         urlComponents.queryItems = [
             URLQueryItem(name: "q", value: name)
