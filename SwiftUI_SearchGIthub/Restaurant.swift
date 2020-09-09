@@ -14,8 +14,6 @@ struct SearchUserResponse: Decodable {
 
 struct Restaurant: Hashable, Identifiable, Decodable {
     var id: Int
-    var score: Double
-    var login: String? = nil
-    var avatar_url: URL? = nil
-    var html_url: URL? = nil
+    var statusCode: Int
+    var body: [String]
 }

@@ -128,7 +128,7 @@
 					};
 				};
 			};
-			buildConfigurationList = BB639A1A240FE7EE00F56B29 /* Build configuration list for PBXProject "SwiftUI_SearchGIthub" */;
+			buildConfigurationList = BB639A1A240FE7EE00F56B29 /* Build configuration list for PBXProject "SwiftUI_SearchGithub" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -308,9 +308,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI_SearchGIthub/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = B3ZKJZUE9E;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SwiftUI_SearchGIthub/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -329,9 +330,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI_SearchGIthub/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = B3ZKJZUE9E;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SwiftUI_SearchGIthub/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -349,7 +351,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BB639A1A240FE7EE00F56B29 /* Build configuration list for PBXProject "SwiftUI_SearchGIthub" */ = {
+		BB639A1A240FE7EE00F56B29 /* Build configuration list for PBXProject "SwiftUI_SearchGithub" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BB639A31240FE7F100F56B29 /* Debug */,
