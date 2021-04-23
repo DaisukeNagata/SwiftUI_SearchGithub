@@ -31,7 +31,7 @@ struct ContentView: View {
                               onCommit: validate)
 
                     List(viewModel.users) { restaurant in
-                        RestaurantRow(restaurant: restaurant, model: self.viewModel)
+                        RestaurantRow(gitHUbStruct: restaurant, model: self.viewModel)
                     }
                 }
                 .textFieldStyle(RoundedBorderTextFieldStyle())

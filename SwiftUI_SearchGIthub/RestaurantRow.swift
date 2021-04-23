@@ -10,22 +10,19 @@ import SwiftUI
 
 struct RestaurantRow: View {
 
-    var restaurant: Restaurant
+    var gitHUbStruct: GitHUbStruct
     @ObservedObject var model: OrientationModel
 
     var body: some View {
         HStack {
-            restaurant.body.map { m in
-            ImageViewContainer(imageUrl: m)
-            }.first
-//            Button(action: {
-//                self.model.invalid.toggle()
-////                self.model.urlPath = self.restaurant.html_url?.absoluteString ?? ""
-//            }, label: {
-//                Text("GitHub login Name \(String(describing: self.model.name == "" ? "" : self.model.name))" +
-//                    "\n" +
-//                    "GitHub ID \(String(describing:  self.restaurant.id.description == "" ? "" : self.restaurant.id.description))")
-//            })
+            ImageViewContainer(imageUrl: gitHUbStruct.avatar_url)
+            Button(action: {
+                self.model.invalid.toggle()
+            }, label: {
+                Text("GitHub login Name \(String(describing: self.model.name == "" ? "" : self.model.name))" +
+                    "\n" +
+                    "GitHub ID \(String(describing:  self.gitHUbStruct.id.description == "" ? "" : self.gitHUbStruct.id.description))")
+            })
         }
     }
 }

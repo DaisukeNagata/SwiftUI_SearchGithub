@@ -1,5 +1,5 @@
 //
-//  Restaurant.swift
+//  SearchUserResponse.swift
 //  SampleList
 //
 //  Created by 永田大祐 on 2020/03/01.
@@ -9,11 +9,11 @@
 import SwiftUI
 
 struct SearchUserResponse: Decodable {
-    var items: [Restaurant]
+    var items: [GitHUbStruct]
 }
 
-struct Restaurant: Hashable, Identifiable, Decodable {
+struct GitHUbStruct: Hashable, Identifiable, Decodable {
+    var login: String
     var id: Int
-    var statusCode: Int
-    var body: [String]
+    var avatar_url: String
 }

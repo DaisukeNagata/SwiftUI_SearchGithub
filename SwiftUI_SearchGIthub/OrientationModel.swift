@@ -14,7 +14,7 @@ final class OrientationModel: ObservableObject {
     @Published var spinner = Spinner(isAnimating: true, style: .large) 
 
     @Published var urlPathSet = "https://api.github.com/search/users"
-    @Published var users = [Restaurant]()
+    @Published var users = [GitHUbStruct]()
     @Published var invalid = false
     @Published var urlPath = ""
     @Published var name = ""
@@ -56,7 +56,6 @@ final class OrientationModel: ObservableObject {
 
         var request = URLRequest(url: urlComponents.url!)
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
-
         cancellable = URLSession.shared.dataTaskPublisher(for: request)
             .map { $0.data }
             .decode(type: SearchUserResponse.self, decoder: JSONDecoder())
@@ -72,6 +71,7 @@ final class OrientationModel: ObservableObject {
                 fatalError(error.localizedDescription)
             }
         }, receiveValue: { user in
+            print(user)
             self.spinner.isAnimating = false
             // this is sorted
             self.users =  user.sorted { (l, r) -> Bool in

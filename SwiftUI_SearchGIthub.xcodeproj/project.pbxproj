@@ -15,10 +15,10 @@
 		BB639A2C240FE7F100F56B29 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB639A2B240FE7F100F56B29 /* Preview Assets.xcassets */; };
 		BB639A2F240FE7F100F56B29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB639A2D240FE7F100F56B29 /* LaunchScreen.storyboard */; };
 		BB639A37240FE83400F56B29 /* ImageViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB639A36240FE83400F56B29 /* ImageViewContainer.swift */; };
-		BB639A39240FE83C00F56B29 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB639A38240FE83C00F56B29 /* Restaurant.swift */; };
 		BB639A3B240FE84500F56B29 /* RestaurantRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB639A3A240FE84500F56B29 /* RestaurantRow.swift */; };
 		BB639A3D240FE84E00F56B29 /* OrientationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB639A3C240FE84E00F56B29 /* OrientationModel.swift */; };
 		BB639A3F240FE85600F56B29 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB639A3E240FE85600F56B29 /* WebView.swift */; };
+		BBB39E0A263337DE008F4F64 /* SearchUserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB39E09263337DE008F4F64 /* SearchUserResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,10 +32,10 @@
 		BB639A2E240FE7F100F56B29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BB639A30240FE7F100F56B29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB639A36240FE83400F56B29 /* ImageViewContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewContainer.swift; sourceTree = "<group>"; };
-		BB639A38240FE83C00F56B29 /* Restaurant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		BB639A3A240FE84500F56B29 /* RestaurantRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantRow.swift; sourceTree = "<group>"; };
 		BB639A3C240FE84E00F56B29 /* OrientationModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrientationModel.swift; sourceTree = "<group>"; };
 		BB639A3E240FE85600F56B29 /* WebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		BBB39E09263337DE008F4F64 /* SearchUserResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchUserResponse.swift; path = SwiftUI_SearchGIthub/SearchUserResponse.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +70,7 @@
 			children = (
 				BB639A22240FE7EE00F56B29 /* AppDelegate.swift */,
 				BB639A24240FE7EE00F56B29 /* SceneDelegate.swift */,
-				BB639A38240FE83C00F56B29 /* Restaurant.swift */,
+				BBB39E09263337DE008F4F64 /* SearchUserResponse.swift */,
 				BB639A3A240FE84500F56B29 /* RestaurantRow.swift */,
 				BB639A3C240FE84E00F56B29 /* OrientationModel.swift */,
 				BB639A3E240FE85600F56B29 /* WebView.swift */,
@@ -128,7 +128,7 @@
 					};
 				};
 			};
-			buildConfigurationList = BB639A1A240FE7EE00F56B29 /* Build configuration list for PBXProject "SwiftUI_SearchGithub" */;
+			buildConfigurationList = BB639A1A240FE7EE00F56B29 /* Build configuration list for PBXProject "SwiftUI_SearchGIthub" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -164,13 +164,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB639A39240FE83C00F56B29 /* Restaurant.swift in Sources */,
 				BB2AF80F243BFAB900482FA2 /* Spinner.swift in Sources */,
 				BB639A3F240FE85600F56B29 /* WebView.swift in Sources */,
 				BB639A3B240FE84500F56B29 /* RestaurantRow.swift in Sources */,
 				BB639A37240FE83400F56B29 /* ImageViewContainer.swift in Sources */,
 				BB639A23240FE7EE00F56B29 /* AppDelegate.swift in Sources */,
 				BB639A3D240FE84E00F56B29 /* OrientationModel.swift in Sources */,
+				BBB39E0A263337DE008F4F64 /* SearchUserResponse.swift in Sources */,
 				BB639A25240FE7EE00F56B29 /* SceneDelegate.swift in Sources */,
 				BB639A27240FE7EE00F56B29 /* ContentView.swift in Sources */,
 			);
@@ -351,7 +351,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BB639A1A240FE7EE00F56B29 /* Build configuration list for PBXProject "SwiftUI_SearchGithub" */ = {
+		BB639A1A240FE7EE00F56B29 /* Build configuration list for PBXProject "SwiftUI_SearchGIthub" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BB639A31240FE7F100F56B29 /* Debug */,
