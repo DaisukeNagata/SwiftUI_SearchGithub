@@ -17,11 +17,12 @@ struct RestaurantRow: View {
         HStack {
             ImageViewContainer(imageUrl: gitHUbStruct.avatar_url)
             Button(action: {
-                self.model.invalid.toggle()
+                model.invalid.toggle()
+                model.urlPath = gitHUbStruct.html_url
             }, label: {
-                Text("GitHub login Name \(String(describing: self.model.name == "" ? "" : self.model.name))" +
+                Text("GitHub login Name \(String(describing: model.name == "" ? "" : self.model.name))" +
                     "\n" +
-                    "GitHub ID \(String(describing:  self.gitHUbStruct.id.description == "" ? "" : self.gitHUbStruct.id.description))")
+                    "GitHub ID \(String(describing:  gitHUbStruct.id.description == "" ? "" : gitHUbStruct.id.description))")
             })
         }
     }

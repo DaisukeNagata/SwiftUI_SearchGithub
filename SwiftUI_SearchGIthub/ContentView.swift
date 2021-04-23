@@ -30,8 +30,8 @@ struct ContentView: View {
                                 }},
                               onCommit: validate)
 
-                    List(viewModel.users) { restaurant in
-                        RestaurantRow(gitHUbStruct: restaurant, model: self.viewModel)
+                    List(viewModel.users) { value in
+                        RestaurantRow(gitHUbStruct: value, model: self.viewModel)
                     }
                 }
                 .textFieldStyle(RoundedBorderTextFieldStyle())
@@ -53,7 +53,7 @@ struct ContentView: View {
                 .navigationBarTitle(Text("Users"))
     
                 if self.viewModel.invalid == true {
-                    ContentWebView(viewModel: self.viewModel)
+                    ContentWebView(viewModel: viewModel)
                 }
                 self.viewModel.isAnimating()
             }

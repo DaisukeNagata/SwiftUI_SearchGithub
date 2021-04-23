@@ -72,9 +72,6 @@ final class OrientationModel: ObservableObject {
             }
         }, receiveValue: { user in
             self.spinner.isAnimating = false
-            user.forEach { [self] v in
-                urlPath = v.html_url
-            }
             // this is sorted
             self.users =  user.sorted { (l, r) -> Bool in
                 if l.id < r.id {
