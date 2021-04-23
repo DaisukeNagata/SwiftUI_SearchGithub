@@ -16,4 +16,5 @@ struct GitHUbStruct: Hashable, Identifiable, Decodable {
     var login: String
     var id: Int
     var avatar_url: String
+    var html_url: String
 }
