@@ -26,6 +26,8 @@ struct WebView: UIViewRepresentable {
     }
 
     func updateUIView(_ uiView: WKWebView, context: Context) {
-        uiView.load(URLRequest(url: URL(string: loadUrl)!))
+        if !loadUrl.isEmpty {
+            uiView.load(URLRequest(url: URL(string: loadUrl)!))
+        }
     }
 }
