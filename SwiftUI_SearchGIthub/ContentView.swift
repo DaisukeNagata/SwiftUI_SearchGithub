@@ -21,13 +21,9 @@ struct ContentView: View {
                     TextField("姓",
                               text: self.$name,
                               onEditingChanged: { begin in
-                                if begin {
-                                    self.viewModel.name = self.name
-                                    self.viewModel.search()
-                                } else {
-                                    self.viewModel.name = self.name
-                                    self.viewModel.search()
-                                }},
+                                self.viewModel.name = self.name
+                                self.viewModel.search()
+                              },
                               onCommit: validate)
 
                     List(viewModel.users) { value in
@@ -36,23 +32,20 @@ struct ContentView: View {
                 }
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .navigationBarItems(leading:
-                    HStack {
                         Button(action: {
                             self.viewModel.invalid.toggle()
                         }, label: {
                             Text("Back")
-                        })
-                    }, trailing:
-                    HStack {
+                        }),trailing:
                         Button(action: {
                             self.viewModel.users.removeAll()
                         }, label: {
                             Text("Rest")
                         })
-                })
+                )
                 .navigationBarTitle(Text("Users"))
     
-                if self.viewModel.invalid == true {
+                if self.viewModel.invalid {
                     ContentWebView(viewModel: viewModel)
                 }
                 self.viewModel.isAnimating()
